@@ -82,6 +82,10 @@ while (true) {
 
     case "3":
       let luckyNumber = prompt("Nhập chuỗi số in trên hóa đơn: ").trim();
+      if (luckyNumber.length < 2) {
+        console.log("Chuỗi số không hợp lệ!");
+        break;
+      }
       let reverseNumber = "";
       let digitSum = 0;
       for (let i = luckyNumber.length - 1; i >= 0; i--) {
