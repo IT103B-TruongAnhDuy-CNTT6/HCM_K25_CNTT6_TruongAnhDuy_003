@@ -60,11 +60,23 @@ while (true) {
       console.log("=".repeat(50));
       console.log("Mã đơn hàng: " + currentOrderCode);
       console.log("Số cuốn sách: " + bookCount);
-      console.log("Giá mỗi cuốn: " + pricePerBook);
-      console.log("Chi phí cơ sở: " + basePrice);
-      console.log("Tiền giảm giá: " + discount);
-      console.log("Phí bọc sách và đóng gói: " + packageFee);
-      console.log("Tổng thanh toán: " + totalPayment);
+      console.log(
+        "Giá mỗi cuốn: " + pricePerBook.toLocaleString("vi-VN") + " VNĐ",
+      );
+      console.log(
+        "Chi phí cơ sở: " + basePrice.toLocaleString("vi-VN") + " VNĐ",
+      );
+      console.log(
+        "Tiền giảm giá: " + discount.toLocaleString("vi-VN") + " VNĐ",
+      );
+      console.log(
+        "Phí bọc sách và đóng gói: " +
+          packageFee.toLocaleString("vi-VN") +
+          " VNĐ",
+      );
+      console.log(
+        "Tổng thanh toán: " + totalPayment.toLocaleString("vi-VN") + " VNĐ",
+      );
       console.log("=".repeat(50));
       break;
 
@@ -82,7 +94,7 @@ while (true) {
         console.log(`Mã số gốc: ${luckyNumber}
 Mã đảo ngược: ${reverseNumber}
 Tổng chữ số: ${digitSum}
-Chia hết cho 9: "Có"
+Chia hết cho 9: Có
 Giải thưởng: Giải Đặc Biệt`);
       } else if (reverseNumber === luckyNumber) {
         console.log(`Mã số gốc: ${luckyNumber}
@@ -94,7 +106,7 @@ Giải thưởng: Giải Nhất`);
         console.log(`Mã số gốc: ${luckyNumber}
 Mã đảo ngược: ${reverseNumber}
 Tổng chữ số: ${digitSum}
-Chia hết cho 9: "Có"
+Chia hết cho 9: Có
 Giải thưởng: Giải Nhì`);
       } else {
         console.log("Không trúng thưởng");
